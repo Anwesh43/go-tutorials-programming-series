@@ -5,9 +5,9 @@ var mainApp = angular.module('mainApp',[])
 //     }
 // })
 mainApp.controller('mapController',function($scope){
-    var items = ["Declaring a Map and putting some values in a map.","","Iterating over a map.","some functions for map manipulation"]
+    var items = ["What is Variadic function?","","how to use in golang?","A simple example"]
     items = items.map(function(item){
-        var newItem =  {data:item,h:(window.innerWidth*8)/10,speed:window.innerHeight/10,t:0,limit:16}
+        var newItem =  {data:item,h:(window.innerWidth*8)/10,speed:window.innerWidth/20,t:0,limit:12}
         return newItem
     })
     $scope.items = []
